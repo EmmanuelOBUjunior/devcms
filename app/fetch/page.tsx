@@ -2,7 +2,7 @@
 async function Fetching() {
     const response  = await fetch('https://jsonplaceholder.typicode.com/albums')
     if(!response) throw new Error('Failed to fetch data')
-
+    
     const albums = await response.json()
     console.log(albums)
   return (
