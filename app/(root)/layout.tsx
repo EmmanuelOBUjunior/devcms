@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const HomeLayout = ({children}: Readonly<{children: React.ReactNode}>) => {
+const HomeLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div>
-        Navbar
+      Navbar
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default HomeLayout
+export default HomeLayout;
