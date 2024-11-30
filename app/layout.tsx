@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${WorkSans.variable} ${WorkSans.variable} antialiased`}
       >
         {children}
       </body>
