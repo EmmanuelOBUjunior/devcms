@@ -4,7 +4,8 @@ const SearchForm = () => {
     const query = 'Test'
 
     const reset = () => {
-        
+        const form = document.querySelector('.search-form') as HTMLFormElement
+
     }
 
   return (
@@ -18,7 +19,7 @@ const SearchForm = () => {
 
         <div className='flex gap-2'>
             {query && (
-                <button onClick={reset}></button>
+                <button type='reset' onClick={reset}></button>
             )}
         </div>
     </Form>
