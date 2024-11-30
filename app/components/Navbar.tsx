@@ -12,10 +12,13 @@ const Navbar = async() => {
           <Image src="/yclogo.png" alt="Logo" width={144} height={30} />
         </Link>
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-5">
           {session && session?.user ? (
             <>
             <Link href='/startup/create'><span>Create</span></Link>
+            <button onClick={signOut}>
+              <span>Sign Out</span>
+            </button>
             </>
           ):(
             <button onClick={signIn('github')}>
