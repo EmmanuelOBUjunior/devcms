@@ -19,13 +19,15 @@ const Navbar = async () => {
                 <span>Create</span>
               </Link>
               <form
-                action={async() => {
+                action={async () => {
                   "use server";
 
-                 await signOut({redirectTo:'/'});
+                  await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit"><span>Logout</span></button>
+                <button type="submit">
+                  <span>Logout</span>
+                </button>
               </form>
               <Link href={`/user/${session?.id}`}>
                 <span>{session?.user.name}</span>
