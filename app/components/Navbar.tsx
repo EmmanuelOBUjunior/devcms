@@ -19,6 +19,9 @@ const Navbar = async() => {
             <button onClick={signOut}>
               <span>Sign Out</span>
             </button>
+            <Link href={`/user/${session?.id}`}>
+            <span>{session?.user.name}</span>
+            </Link>
             </>
           ):(
             <button onClick={signIn('github')}>
