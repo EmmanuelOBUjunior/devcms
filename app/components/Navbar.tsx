@@ -1,14 +1,28 @@
+import { auth, signIn, signOut } from "@/auth";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = async() => {
+  const session = await auth()
   return (
     <header className="px-6 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items center">
         <Link href="/">
           <Image src="/yclogo.png" alt="Logo" width={144} height={30} />
         </Link>
+
+        <div className="flex items-center">
+          {session && session?.user ? (
+            <>
+            <Link href='/startup/create'><span>Create</span></Link>
+            </>
+          ):(
+            <button onClick={signIn('github')}>
+              <span>Login</span>
+            </button>
+          )}
+        </div>
       </nav>
     </header>
   );
