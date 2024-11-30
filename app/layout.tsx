@@ -20,8 +20,8 @@ const WorkSans = localFont({
       style: 'normal'
     },
     {
-      path: './fonts/WorkSans.ttf',
-      weight: '900',
+      path: './fonts/WorkSans-SemiBold.ttf',
+      weight: '600',
       style: 'normal'
     },
     {
