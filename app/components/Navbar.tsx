@@ -8,7 +8,10 @@ const Navbar = () => {
       <nav className='flex justify-between items center'>
         <Link href='/'>
         <Image
-        
+        src='yclogo.png'
+        alt='Logo'
+        width={144}
+        height={30}
         />
         </Link>
       </nav>
