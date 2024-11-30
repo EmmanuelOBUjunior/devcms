@@ -6,7 +6,7 @@ import React from "react";
 const Navbar = async () => {
   const session = await auth();
   return (
-    <header className="px-6 py-3 bg-white shadow-sm font-worksans">
+    <header className="px-6 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items center">
         <Link href="/">
           <Image src="/yclogo.png" alt="Logo" width={144} height={30} />
@@ -19,15 +19,13 @@ const Navbar = async () => {
                 <span>Create</span>
               </Link>
               <form
-                action={async () => {
+                action={async() => {
                   "use server";
 
-                  await signOut({ redirectTo: "/" });
+                 await signOut({redirectTo:'/'});
                 }}
               >
-                <button type="submit">
-                  <span>Logout</span>
-                </button>
+                <button type="submit"><span>Logout</span></button>
               </form>
               <Link href={`/user/${session?.id}`}>
                 <span>{session?.user.name}</span>
