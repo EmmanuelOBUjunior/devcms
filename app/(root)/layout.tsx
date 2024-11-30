@@ -1,9 +1,9 @@
-import React from "react";
+import Navbar from "../components/Navbar";
 
 const HomeLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div>
-      Navbar
+      <Navbar/>
       {children}
     </div>
   );
