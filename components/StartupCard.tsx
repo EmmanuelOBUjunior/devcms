@@ -3,6 +3,7 @@ import { EyeIcon } from "lucide-react";
 import Link from "next/link";
 
 const StartupCard = ({ post }: { post: StartupCardtype }) => {
+    const {_createdAt, views, author:{_id:authorId, name}, title, description, _id, image, category} = post 
   return (
     <li className="startup-card group">
       <div className="flex-between">
