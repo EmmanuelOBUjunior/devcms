@@ -4,15 +4,13 @@ import SearchFormReset from './SearchFormReset'
 const SearchForm = () => {
     const query = 'Test'
 
-    
-
   return (
     <Form className='search-form' action='/'>
         <input type="text"
         placeholder='Search Startup'
         name='query'
         className='search-input'
-        defaultValue={query}
+        defaultValue={query} 
         />
 
         <div className='flex gap-2'>
