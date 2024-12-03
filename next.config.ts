@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     remotePatterns:[
       {
-        protocol: 'https:',
+        protocol: 'https',
         hostname: '*'
       }
     ]
