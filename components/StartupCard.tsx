@@ -1,5 +1,6 @@
 import { formatDate } from "@/lib/utils";
 import { EyeIcon } from "lucide-react";
+import Link from "next/link";
 
 const StartupCard = ({ post }: { post: StartupCardtype }) => {
   return (
@@ -11,8 +12,15 @@ const StartupCard = ({ post }: { post: StartupCardtype }) => {
             <EyeIcon className="size-6 text-primary"/>
             <span className="text-16-medium">{post.views}</span>
         </div>
+        </div>
 
-      </div>
+        <div className="flex-between mt-5 gap-5">
+            <div className="flex-1">
+                <Link href={`/user/${post.author?._id}`}>{post.author?.name}</Link>
+            </div>
+        </div>
+
+      
     </li>
   );
 };
