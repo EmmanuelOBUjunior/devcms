@@ -17,6 +17,7 @@ const SearchForm = () => {
 
         <div className='flex gap-2'>
             {query && <SearchFormReset/>}
+            <button type = 'submit' className='search-btn text-white'>S</button>
         </div>
     </Form>
   )
