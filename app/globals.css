@@ -40,7 +40,7 @@
     }
 
     .text-16-medium {
-        @apply font-medium text-[16px] text-black;
+        @apply font-medium text-[16px] text-black font-work-sans;
     }
 
     .text-14-normal {

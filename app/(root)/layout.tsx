@@ -3,10 +3,10 @@ import Navbar from "@/components/Navbar";
 
 const HomeLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
-    <div>
+    <main className="font-work-sans">
       <Navbar/>
       {children}
-    </div>
+    </main>
   );
 };
 
