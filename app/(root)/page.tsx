@@ -4,7 +4,7 @@ import SearchForm from "../../components/SearchForm";
 export default async function Home({searchParams}:{searchParams:Promise<{query?:string}>}) {
   const query = (await searchParams).query
 
-  const post = [{
+  const posts = [{
     _createdAt: 'Yesterday',
     views: 55,
     author: {_id: 1},
@@ -26,8 +26,8 @@ export default async function Home({searchParams}:{searchParams:Promise<{query?:
       {query ? `Search results for ${query}`:'All Startups'}
     </p>
     <ul className="mt-7 card_grid">
-      {post.length > 0 ? (
-        post.map((post:StartupCardType, index:number)=>(<StartupCard key={index}/>))
+      {posts.length > 0 ? (
+        posts.map((post:StartupCardType, index:number)=>(<StartupCard key={post._id} post={post}/>))
       ):(<p className="no-results">No startup found</p>)}
     </ul>
     </section>
