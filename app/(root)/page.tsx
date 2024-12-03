@@ -10,7 +10,7 @@ export default async function Home({searchParams}:{searchParams:Promise<{query?:
       <SearchForm query = {query}/>
     </section>
     <section className="section_container">
-    <p className="text-30-bold">
+    <p className="text-30-semibold">
       {query ? `Search results for ${query}`:'All Startups'}
     </p>
     </section>

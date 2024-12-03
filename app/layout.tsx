@@ -44,7 +44,7 @@ const workSans = localFont({
       weight: '100',
       style: 'normal'
     },
-  ], variable: '--font-worksans'
+  ], variable: '--font-work-sans'
 })
 
 export const metadata: Metadata = {

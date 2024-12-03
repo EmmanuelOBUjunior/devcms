@@ -24,23 +24,23 @@
     }
 
     .text-30-semibold {
-        @apply font-semibold text-[30px] text-black;
+        @apply font-semibold text-[30px] text-black font-work-sans;
     }
 
     .text-26-semibold {
-        @apply font-semibold text-[26px] text-black;
+        @apply font-semibold text-[26px] text-black font-work-sans;
     }
 
     .text-24-black {
-        @apply text-[24px] font-black text-black;
+        @apply text-[24px] font-black text-black font-work-sans;
     }
 
     .text-20-medium {
-        @apply font-medium text-[20px] text-black;
+        @apply font-medium text-[20px] text-black font-work-sans;
     }
 
     .text-16-medium {
-        @apply font-medium text-[16px] text-black;
+        @apply font-medium text-[16px] text-black font-work-sans;
     }
 
     .text-14-normal {
