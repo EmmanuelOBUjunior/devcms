@@ -4,7 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const StartupCard = ({ post }: { post: StartupCardtype }) => {
-    const {_createdAt, views, author:{_id:authorId, name}, title, description, _id, image, category} = post 
+  const {
+    _createdAt,
+    views,
+    author: { _id: authorId, name },
+    title,
+    description,
+    _id,
+    image,
+    category,
+  } = post;
   return (
     <li className="startup-card group">
       <div className="flex-between">
@@ -26,10 +35,18 @@ const StartupCard = ({ post }: { post: StartupCardtype }) => {
           </Link>
         </div>
         <Link href={`/user/${authorId}`}>
-        <Image src='https://i.pravatar.cc/48' alt="placeholder" width={48} height={48} className="rounded-full"/>
+          <Image
+            src="https://i.pravatar.cc/48"
+            alt="placeholder"
+            width={48}
+            height={48}
+            className="rounded-full"
+          />
         </Link>
       </div>
-      <Link href={`/startups/${_id}`}></Link>
+      <Link href={`/startups/${_id}`}>
+        <img src={image} alt="placeholder" className="startup-card-img"/>
+      </Link>
     </li>
   );
 };
