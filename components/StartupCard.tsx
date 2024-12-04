@@ -2,6 +2,7 @@ import { formatDate } from "@/lib/utils";
 import { EyeIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const StartupCard = ({ post }: { post: StartupCardtype }) => {
   const {
@@ -53,6 +54,7 @@ const StartupCard = ({ post }: { post: StartupCardtype }) => {
         <Link href={`/?query=${category.toLowerCase()}`}>
           <p className="text-16-medium">{category}</p>
         </Link>
+        <Button className="startup-card-btn"><Link href={`/startups/${_id}`}>Details</Link></Button>
       </div>
     </li>
   );
