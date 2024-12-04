@@ -29,6 +29,7 @@ const StartupCard = ({ post }: { post: StartupCardtype }) => {
         <Image src='https://i.pravatar.cc/48' alt="placeholder" width={48} height={48} className="rounded-full"/>
         </Link>
       </div>
+      <Link href={`/startups/${_id}`}></Link>
     </li>
   );
 };
