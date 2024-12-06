@@ -7,7 +7,7 @@ export default async function Home({searchParams}:{searchParams:Promise<{query?:
   const query = (await searchParams).query
 
   const posts = await client.fetch(STARTUP_QUERY)
-  console.log(posts)
+  console.log(JSON.stringify(posts))
 
   // const posts = [{
   //   _createdAt: new Date(),
