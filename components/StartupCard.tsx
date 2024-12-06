@@ -13,10 +13,10 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
     views,
     author,
     title,
-    description,
+    category,
     _id,
     image,
-    category,
+    description,
   } = post;
   return (
     <li className="startup-card group">
