@@ -67,7 +67,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         {/* TODO: EDITOR SELECTED STARTUPS */}
       </section>
       
-      <Suspense fallback={<Skeleton/>}>
+      <Suspense fallback={<Skeleton className="view_skeleton"/>}>
 
       </Suspense>
     </>
