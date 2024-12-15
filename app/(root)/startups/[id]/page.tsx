@@ -5,7 +5,7 @@ const Page = async ({params}: {params:Promise<{id:string}>}) => {
 
   return (
     <>
-    <h1 className='text-3xl'>This is a startup number: ${id}</h1>
+    <h1 className='text-3xl'>This is a startup number: {id}</h1>
     </>
   )
 }
