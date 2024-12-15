@@ -4,8 +4,9 @@ import { STARTUP_BY_ID_QUERY } from "@/sanity/lib/queries";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import React from "react";
+import React, { Suspense } from "react";
 import markdownit from 'markdown-it'
+import { Skeleton } from "@/components/ui/skeleton";
 
 const md = markdownit()
 
@@ -63,7 +64,12 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
           ):(<p className="no-result">No details provided</p>)}
         </div>
         <hr className="divider"/>
+        {/* TODO: EDITOR SELECTED STARTUPS */}
       </section>
+      
+      <Suspense fallback={<Skeleton/>}>
+
+      </Suspense>
     </>
   );
 };
