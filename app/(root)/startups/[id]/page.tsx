@@ -1,6 +1,8 @@
 import { formatDate } from "@/lib/utils";
 import { client } from "@/sanity/lib/client";
 import { STARTUP_BY_ID_QUERY } from "@/sanity/lib/queries";
+import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -27,9 +29,10 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
         />
         <div className="space-y-5 mt-10 max-w-4xl mx-auto">
           <div className="flex-between gap-5">
-
+            <Link href={`/user/${post?.author?._id}`}>
+           <Image src={post.author?.image} alt="avatar" width={64} height={64} className="rounded-full drop-shadow-lg"/> 
+            </Link>
           </div>
-
         </div>
       </section>
     </>

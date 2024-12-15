@@ -222,7 +222,7 @@ export type STARTUP_BY_ID_QUERYResult = {
   author: {
     _id: string;
     name: string | null;
-    image: string | null;
+    image: string | undefined;
     bio: string | null;
     pitch: null;
   } | null;
