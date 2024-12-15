@@ -49,7 +49,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
             </Link>
             <p className="category-tag">{post.category}</p>
           </div>
-          <h3 className="text-30-bold">Pictch Details</h3>
+          <h3 className="text-30-bold">Pitch Details</h3>
         </div>
       </section>
     </>
