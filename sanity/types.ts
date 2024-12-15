@@ -226,7 +226,7 @@ export type STARTUP_BY_ID_QUERYResult = {
     bio: string | null;
     pitch: null;
   } | null;
-  image: string | null;
+  image: string | undefined;
 } | null;
 
 // Query TypeMap
