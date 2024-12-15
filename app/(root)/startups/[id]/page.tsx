@@ -19,8 +19,8 @@ const Page = async ({params}: {params:Promise<{id:string}>}) => {
       <h1 className='heading'>{post.title}</h1>
       <p className='sub-heading !max-w-5xl'>{post.description}</p>
     </section>
-    <section className='section-container'>
-      <img src={post.image} alt="thumbnail" />
+    <section className='section_container'>
+      <img src={post.image} alt="thumbnail" className='w-full h-auto rounded-xl'/>
     </section>
     </>
   )
